@@ -80,12 +80,67 @@
             font-size: 25px;
         }
     }
+    
     .consultation {
-        padding: 100px 75px 92px 75px;
+        min-height: 610px;
+        padding: 100px 70px 92px 70px;
         &__descr {
-            color: black;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .title {
+            &_left {
+                font-size: 28px;
+                line-height: 34px;
+            }
         }
     }
+    
+    .carousel {
+        padding: 50px 30px;
+        &__inner {
+            width: 700px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 70px;
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 200px;
+            height: 46px;
+        }
+        &__content {
+            padding: 0 60px;
+            justify-content: space-between;
+        }
+        &-item {
+            margin-right: 0;
+            margin-bottom: 20px;
+            &:nth-child(4) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .review {
+        padding: 0 30px 20px 30px;
+        &_block {
+            padding: 40px 0;
+        }
+        &_text {
+            padding-left: 30px;
+            width: 500px;
+            &_sms {
+                width: 500px;
+            }
+        }
+
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -163,12 +218,98 @@
             font-size: 25px;
         }
     }
+    .consultation {
+        min-height: 440px;
+        padding: 60px 40px 52px 40px;
+        &__descr {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .feed-form {
+            margin-top: 25px;
+            width: 230px;
+            input {
+                height: 40px;
+                margin-bottom: 13px;
+                padding: 0 15px;
+                font-size: 13px;
+                &:nth-child(3) {
+                    margin-bottom: 17px;
+                }
+            }
+        }
+        .button {
+            &_submit {
+                width: 100%;
+                height: 45px;
+                font-size: 13px;
+            }
+        }
+        .title {
+            &_left {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+    }
+    .carousel {
+        padding: 50px 30px;
+        &__inner {
+            width: 516px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 60px;
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+        }
+        &__content {
+            padding: 0 20px;
+            justify-content: space-between;
+        }
+        &-item {
+            width: 260px;
+            padding: 10px 10px 15px;
+        }
+    }
+    .review {
+        padding: 0 20px 20px 20px;
+        &_block {
+            padding: 20px 0;
+        }
+        &_text {
+            padding-left: 30px;
+            width: 500px;
+            &_name {
+                font-size: 16px;
+            }
+            &_success {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+            &_sms {
+                width: 400px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+    }
 }
 
 @media (max-width: 575px) {
     .promo {
         min-height: 550px;
-        padding: 30px 0 70px 0;
+        padding: 30px 0 50px 0;
         .header {
             flex-direction: column;
             padding: 0 25px;
@@ -261,6 +402,119 @@
             font-size: 27px;
             line-height: 30px;
         }
+    }
+    .consultation {
+        min-height: 330px;
+        padding: 45px 30px 50px 30px;
+        &__descr {
+            display: none;
+        }
+        .feed-form {
+            margin-top: 20px;
+            width: 260px;
+            align-items: stretch;
+            input {
+                height: 30px;
+                margin-bottom: 10px;
+                padding: 0 15px;
+                font-size: 13px;
+                &:nth-child(3) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .button {
+            &_submit {
+                width: 100%;
+                height: 35px;
+                font-size: 12px;
+            }
+        }
+        .title {
+            &_left {
+                font-size: 17px;
+                line-height: 23px;
+            }
+        }
+    }
+    .carousel {
+        padding: 30px 10px;
+        &__inner {
+            width: 300px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding-bottom: 60px;
+        .title {
+            font-size: 27px;
+        }
+        &__tabs {
+            display: block;
+            margin: 0 auto;
+            margin: 30px 40px 0;
+            width: 240px;
+            padding-left: 10px;
+        }
+        &__tab {
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            &:nth-child(1) {
+                margin-left: -15px;
+            }
+            &:nth-child(3) {
+                margin-left: 15px;
+            }
+        }
+        &__content {
+            margin-top: 30px;
+            padding: 0 20px;
+            justify-content: space-between;
+        }
+        &-item {
+            width: 280px;
+            padding: 10px 10px 15px;
+            &:nth-child(5) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .review {
+        padding: 0 20px 20px 20px;
+        .title {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+        &_block {
+            padding: 20px 0;
+            flex-direction: column;
+        }
+        &_item {
+            width: 100px;
+        }
+        &_text {
+            padding: 10px 0 0 0;
+            width: 280px;
+            &_name {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            &_success {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            &_sms {
+                width: 100%;
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+
     }
 }
 

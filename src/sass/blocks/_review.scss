@@ -1,0 +1,47 @@
+.review {
+    padding-bottom: 21px;
+    &_divider {
+        width: 100%;
+        height: 1px;
+        padding: 0 5px;
+        background-color: #f6f6f6;
+    }
+    &_block {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 50px 10px;
+    }
+    &_item {
+        img {
+            width: 100%;
+        }
+    }
+    &_text {
+        padding-left: 62px;
+        width: 660px;
+        &_name {
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 18px;
+        }
+        &_success {
+            color: #646464;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 14px;
+            margin-bottom: 19px;
+        }
+        &_sms {
+            width: 659px;
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left;
+            letter-spacing: normal;
+        }
+    }
+}
