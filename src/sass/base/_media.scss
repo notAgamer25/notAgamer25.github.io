@@ -449,7 +449,9 @@
     .catalog {
         padding-bottom: 60px;
         .title {
-            font-size: 27px;
+            width: 280px;
+            font-size: 24px;
+            margin: 0 auto;
         }
         &__tabs {
             display: block;
@@ -487,7 +489,8 @@
     .review {
         padding: 0 20px 20px 20px;
         .title {
-            font-size: 27px;
+            width: 280px;
+            font-size: 24px;
             margin-bottom: 10px;
         }
         &_block {
